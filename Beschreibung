@@ -1,0 +1,74 @@
+---
+layout: default
+title: Startseite
+---
+
+<h1>Willkommen bei StallCheck</h1>
+<p>Digitale Stallbewertung leicht gemacht – fair, sicher und nachvollziehbar.</p>
+<p>Mit dem StallCheck erhalten Sie eine einfache Möglichkeit, Ihren Pferdebetrieb selbst zu bewerten – kostenlos oder als erweiterte Prüfung mit Auswertung.</p>
+
+<a href="/selbstcheck.html">Zum kostenlosen Selbstcheck</a>
+
+---
+layout: default
+title: Über StallCheck
+---
+
+<h1>Über StallCheck</h1>
+<p>StallCheck ist entstanden aus über 40 Jahren Erfahrung in der Pferdehaltung. Unser Ziel: Einen transparenten, digitalen Qualitätscheck für Pferdebetriebe zu schaffen – unabhängig, verständlich und fair.</p>
+
+---
+layout: default
+title: Selbstcheck
+---
+
+<h1>Basis-Selbstcheck (kostenlos)</h1>
+<form id="checkForm">
+  <ol>
+    <li>Ist die Tränke jederzeit zugänglich? <br><input type="radio" name="q1" value="1"> Ja <input type="radio" name="q1" value="0"> Nein</li>
+    <li>Gibt es täglich Auslauf oder Weidegang? <br><input type="radio" name="q2" value="1"> Ja <input type="radio" name="q2" value="0"> Nein</li>
+    <li>Ist die Einstreu sauber und trocken? <br><input type="radio" name="q3" value="1"> Ja <input type="radio" name="q3" value="0"> Nein</li>
+    <li>Werden die Tiere täglich kontrolliert? <br><input type="radio" name="q4" value="1"> Ja <input type="radio" name="q4" value="0"> Nein</li>
+    <li>Ist die Fütterung angepasst und ausgewogen? <br><input type="radio" name="q5" value="1"> Ja <input type="radio" name="q5" value="0"> Nein</li>
+    <li>Ist die Umgebung frei von Gefahrenquellen? <br><input type="radio" name="q6" value="1"> Ja <input type="radio" name="q6" value="0"> Nein</li>
+  </ol>
+  <button type="button" onclick="auswerten()">Auswertung anzeigen</button>
+</form>
+<div id="ergebnis"></div>
+
+<script>
+function auswerten() {
+  let punkte = 0;
+  for (let i = 1; i <= 6; i++) {
+    const antwort = document.querySelector(`input[name=q${i}]:checked`);
+    if (antwort) punkte += parseInt(antwort.value);
+  }
+  document.getElementById("ergebnis").innerHTML =
+    `<p>Sie haben ${punkte} von 6 Punkten erreicht.</p>` +
+    (punkte >= 5 ? "<p>Sehr gut! Ihr Stall erfüllt bereits viele wichtige Kriterien.</p>" : "<p>Es gibt noch Verbesserungspotenzial. Nutzen Sie unsere erweiterten Angebote für eine genauere Analyse.</p>");
+}
+</script>
+
+---
+layout: default
+title: Pakete & Preise
+---
+
+<h1>Pakete & Preise</h1>
+<ul>
+  <li><strong>Basis-Check (10 Fragen):</strong> 19 €</li>
+  <li><strong>Zusatzpaket Haltungsform:</strong> 15 €</li>
+  <li><strong>Zusatzpaket Hygiene & Pflege:</strong> 15 €</li>
+  <li><strong>Zusatzpaket Sicherheit:</strong> 15 €</li>
+  <li><strong>Komplettpaket (inkl. aller Checks & Bewertung):</strong> 100 €</li>
+</ul>
+<p>Die kostenpflichtigen Pakete sind aktuell in Vorbereitung. Bei Interesse kontaktieren Sie uns gerne.</p>
+
+---
+layout: default
+title: Impressum
+---
+
+<h1>Impressum</h1>
+<p>Angaben gemäß § 5 TMG:</p>
+<p>[Dein Name]<br>[Straße]<br>[PLZ Ort]<br>E-Mail: [deine@email.de]</p>
