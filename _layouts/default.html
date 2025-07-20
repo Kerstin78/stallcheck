@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: "StallCheck" }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-<body>
+
   <header style="text-align: center; margin: 20px 0;">
-    <img src="/assets/logo.png" alt="StallCheck Logo" style="max-height: 100px;">
+    <img src="/assets/logo.png" alt="StallCheck Logo" style="max-height: 100px;" />
   </header>
-</header>
-  <nav class="sidebar">
-    <ul>
-      <li><a href="/">🏠 Startseite</a></li>
-      <li><a href="/ueber.html">👤 Über StallCheck</a></li>
-      <li><a href="/selbstcheck.html">✔️ Selbstcheck</a></li>
-      <li><a href="/pakete.html">💶 Pakete & Preise</a></li>
-      <li><a href="/impressum.html">📄 Impressum</a></li>
-    </ul>
-  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/ueber-mich">Über mich</a></li>
+        <li><a href="/stallcheck">StallCheck</a></li>
+        <!-- Weitere Menüpunkte hier -->
+      </ul>
+    </nav>
+  </aside>
+
   <main class="content">
     {{ content }}
   </main>
+
 </body>
 </html>
