@@ -5,7 +5,7 @@ title: Startseite
 
 # Willkommen bei StallCheck 🐴
 
-**Digital. Sicher. Fair.**  
+**Digital. Sicher. Auditbasiert.**  
 StallCheck ist dein digitaler Begleiter für mehr Transparenz und Qualität im Pferdebetrieb.
 
 ---
