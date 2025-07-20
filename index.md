@@ -1,4 +1,4 @@
-<p align="center"><img src="/assets/Logo_stallcheck.png" alt="StallCheck Logo" style="max-height: 120px;"></p>---
+---
 layout: default
 title: Startseite
 ---
