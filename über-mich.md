@@ -29,4 +29,4 @@ Mit StallCheck helfe ich dabei, Ställe transparent und vertrauenswürdig zu mac
 
 Falls Fragen sind, können sie mich per WhattsApp oder Mail am besten erreichen. Ich werde ihre Fragen nach bestem Wissen und Gewissen beantworten.
 
-_Ich werden_Mit Herz und Verstand – für gesunde Pferde und zufriedene Stallkunden._
+_Mit Herz und Verstand – für gesunde Pferde und zufriedene Stallkunden._
