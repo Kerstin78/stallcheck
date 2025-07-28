@@ -1,9 +1,9 @@
 body {
+  background: linear-gradient(135deg, #e6f2ff, #ffffff);
+  color: #333;
   font-family: Arial, sans-serif;
-  background-color: #f5f7fa;  /* heller, professioneller Hintergrund */
   margin: 0;
   padding: 0;
-  color: #333;
 }
 
 nav {
