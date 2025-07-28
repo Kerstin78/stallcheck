@@ -3,37 +3,12 @@ layout: default
 title: Startseite
 ---
 
-# Willkommen bei StallCheck 🐴
+# Herzlich willkommen bei StallCheck!
 
-**Digital. Sicher. Auditbasiert.**  
-StallCheck ist dein digitaler Begleiter für mehr Transparenz und Qualität im Pferdebetrieb.
+StallCheck ist Ihr digitaler Partner für sichere, faire und transparente Stallkontrollen.  
+Wir helfen Ihnen, die Qualität und Sicherheit Ihres Pferdestalls mit einfachen, praxisnahen Checks zu bewerten.
 
----
+Geben sie möglichen neuen Einstellern einen ersten Einblick und Eindruck von ihrem Stall.
 
-## Was ist StallCheck?
-
-StallCheck ist ein unabhängiger Selbstcheck für Pferdebetriebe.  
-In wenigen Schritten bekommst du einen Überblick über wichtige Themen wie Haltung, Hygiene, Sicherheit und Organisation.
-
----
-
-## Was bietet StallCheck?
-
-- 🆓 Kostenloser Schnell-Check mit 6 Fragen
-- 🔎 Erweiterter Basis-Check mit 10 Fragen für nur 19 €
-- 🧩 Zusätzliche Themenpakete für je 15 €
-- 🏅 Komplettpaket mit Auswertung und Siegel für ca. 100 €
-
----
-
-## Direkt einsteigen:
-
-- [Über StallCheck](ueber.html)  
-- [Selbstcheck starten](selbstcheck.html)  
-- [Pakete & Preise](pakete.html)  
-- [Impressum](impressum.html)
-
----
-
-*Danke für dein Interesse an StallCheck!*  
-Bei Fragen oder Anregungen: Einfach über das Impressum melden.
+Starten Sie mit unserem kostenlosen Basis-Check oder entdecken Sie unsere erweiterten Pakete.
+Infos hierzu finden sie im Menü auf der linken Seite.
