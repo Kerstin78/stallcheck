@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
     <style>
       body {
         display: flex;
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        min-height: 100vh;
       }
       nav {
         width: 220px;
         background-color: #f4f4f4;
         padding: 20px;
         height: 100vh;
-        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        position: fixed; /* Sidebar fixiert */
+        top: 0;
+        left: 0;
+        overflow-y: auto;
       }
       nav ul {
         list-style-type: none;
         padding: 0;
+        margin: 0;
       }
       nav ul li {
         margin: 10px 0;
@@ -28,10 +34,17 @@
       nav ul li a {
         text-decoration: none;
         color: #333;
+        font-weight: 600;
       }
-      .content {
-        flex: 1;
+      nav ul li a:hover {
+        color: #007acc;
+      }
+      .main-content {
+        margin-left: 240px; /* Breite der Sidebar + etwas Abstand */
         padding: 30px;
+        flex: 1;
+        min-height: 100vh;
+        box-sizing: border-box;
       }
       .logo {
         text-align: center;
@@ -45,16 +58,18 @@
   <body>
     <nav>
       <ul>
-        <li><a href="/">Startseite</a></li>
-        <li><a href="/ueber-mich">Über mich</a></li>
-        <li><a href="/stallcheck">StallCheck</a></li>
-        <li><a href="/pakete">Pakete & Preise</a></li>
+        <li><a href="{{ '/' | relative_url }}">Startseite</a></li>
+        <li><a href="{{ '/ueber-mich' | relative_url }}">Über mich</a></li>
+        <li><a href="{{ '/stallcheck' | relative_url }}">StallCheck</a></li>
+        <li><a href="{{ '/pakete' | relative_url }}">Pakete & Preise</a></li>
       </ul>
     </nav>
-    <body>
-  <div class="logo">
-    <img src="/assets/logo-stallcheck.png" alt="StallCheck Logo" />
-  </div>
+
+    <div class="main-content">
+      <div class="logo">
+        <img src="{{ '/assets/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
+      </div>
+
       {{ content }}
     </div>
   </body>
