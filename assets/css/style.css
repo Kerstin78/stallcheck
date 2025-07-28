@@ -30,7 +30,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #f0f0f0; /* sehr helles Grau, fast Weiß */
+  color: #f0f0f0; !important; /* sehr helles Grau, fast Weiß */
   font-weight: 600;
   transition: color 0.3s ease;
   display: block;
