@@ -7,10 +7,10 @@ body {
 
 nav {
   width: 220px;
-  background-color: #d0e5f8; /* dezentes Blau */
+  background-color: #d0e3f0; /* Helles Blau */
   padding: 20px;
   height: 100vh;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
