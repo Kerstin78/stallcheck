@@ -6,7 +6,7 @@ permalink: /ueber-mich/
 
 # Über mich
 
-Willkommen bei **StallCheck**!  
+Willkommen bei **Stall-Check**!  
 Mein Name ist Kerstin und ich bringe über 40 Jahre Erfahrung im Bereich Pferdehaltung mit. Pferde sind meine Leidenschaft – und genau deshalb habe ich es mir zur Aufgabe gemacht, für mehr Qualität und Sicherheit in Pferdebetrieben zu sorgen.
 
 ## Meine Motivation
@@ -23,7 +23,7 @@ Ich habe selbst viele Reitställe erlebt – von hervorragend bis katastrophal. 
 ## Warum StallCheck?
 
 Weil jeder Betrieb eine faire Chance verdient – und Pferde nur das Beste.  
-Mit StallCheck helfe ich dabei, Ställe transparent und vertrauenswürdig zu machen.
+Mit Stall-Check helfe ich dabei, Ställe transparent und vertrauenswürdig zu machen.
 
 ---
 
