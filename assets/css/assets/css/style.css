@@ -1,50 +1,77 @@
+/* style.css */
+
 body {
-  background: linear-gradient(135deg, #e6f2ff, #ffffff);
-  color: #333;
+  background: linear-gradient(135deg, #e6f2ff, #ffffff); /* sanfter blauer Verlauf */
+  color: #333333; /* dunkles Grau für Text */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
 }
 
+/* Sidebar */
 nav {
   width: 220px;
-  background-color: #ffffff;
+  background-color: #f0f4f8; /* helles, freundliches Blau-Grau */
   padding: 20px;
   height: 100vh;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #005a87; /* schönes, dezentes Blau */
-  font-weight: bold;
+  color: #0056b3; /* Blau für Links */
+  font-weight: 600;
 }
 
 nav ul li a:hover {
-  color: #007acc;
+  text-decoration: underline;
 }
 
-.content {
-  flex: 1;
-  padding: 30px;
-}
-
+/* Logo in Sidebar */
 .logo {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .logo img {
-  max-height: 120px;
-  margin: 0 auto;
-  display: block;
+  max-height: 100px;
+}
+
+/* Content Bereich rechts */
+.content {
+  margin-left: 240px; /* Platz für Sidebar + ein bisschen Abstand */
+  padding: 30px 40px;
+  max-width: 900px;
+}
+
+/* Überschriften */
+h1, h2, h3 {
+  color: #003366; /* dunkles Blau */
+}
+
+/* Links im Content */
+.content a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.content a:hover {
+  text-decoration: underline;
 }
