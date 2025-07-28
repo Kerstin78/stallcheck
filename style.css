@@ -1,36 +1,38 @@
-
+/* Grundlayout */
 body {
-  font-family: sans-serif;
   margin: 0;
-  padding: 0;
-  display: flex;
+  font-family: Arial, sans-serif;
+  display: block; /* Kein Flex-Layout – Inhalt wird untereinander dargestellt */
 }
 
+/* Sidebar links fest */
 .sidebar {
-  width: 220px;
-  background: #f4f4f4;
+  width: 250px;
+  background-color: #f4f4f4;
   padding: 20px;
-  height: 100vh;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin: 10px 0;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.content {
-  margin-left: 240px;
+/* Hauptinhalt – mit Abstand zur Sidebar */
+.main-content {
+  margin-left: 270px; /* Abstand zur Sidebar */
   padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Logo zentriert oben */
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
 }
