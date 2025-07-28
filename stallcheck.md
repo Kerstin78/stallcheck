@@ -4,11 +4,11 @@ title: StallCheck
 permalink: /stallcheck/
 ---
 
-# StallCheck – Was ist das?
+# Stall-Check – Was ist das?
 
-**StallCheck** ist ein unabhängiges, digitales Prüf- und Bewertungssystem für Pferdebetriebe. Ziel ist es, objektiv nachvollziehbar darzustellen, ob ein Stall grundlegende Anforderungen erfüllt – auf Basis offizieller Vorgaben und praktischer Erfahrung.
+**Stall-Check** ist ein unabhängiges, digitales Prüf- und Bewertungssystem für Pferdebetriebe. Ziel ist es, objektiv nachvollziehbar darzustellen, ob ein Stall grundlegende Anforderungen erfüllt – auf Basis offizieller Vorgaben und praktischer Erfahrung.
 
-## So funktioniert StallCheck
+## So funktioniert Stall-Check
 
 - Du beantwortest einen strukturierten Fragenkatalog (digital oder als PDF).
 - Deine Angaben werden automatisch bewertet.
@@ -32,7 +32,7 @@ Die Bewertung erfolgt in **drei Kategorien**:
 
 ## Zukunftsvision
 
-StallCheck wird kontinuierlich weiterentwickelt – und könnte zukünftig auch auf Hundepensionen oder andere Tierhaltungen erweitert werden.  
+Stall-Check wird kontinuierlich weiterentwickelt – und könnte zukünftig auch auf Hundepensionen oder andere Tierhaltungen erweitert werden.  
 
 ---
 
