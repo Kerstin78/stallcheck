@@ -1,127 +1,70 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
-  <style>
-    body, html {
-      margin: 0; padding: 0; height: 100%;
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      display: flex;
-      height: 100vh;
-      min-height: 600px;
-    }
-    nav {
-      width: 220px;
-      background-color: #004d40;
-      padding: 20px;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-      overflow-y: auto;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    nav ul li {
-      margin: 12px 0;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      cursor: pointer;
-      display: block;
-      padding: 6px 10px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-    nav ul li a:hover {
-      background-color: #ddd;
-    }
-    nav ul li a.active {
-      background-color: #007bff;
-      color: white;
-      font-weight: bold;
-    }
-
-    .content-area {
-      flex: 1;
-      padding: 30px;
-      overflow-y: auto;
-    }
-    .content-section {
-      display: none;
-    }
-    .content-section.active {
-      display: block;
-    }
-
-    .logo {
-      text-align: center;
-      margin-bottom: 30px;
-      padding-top: 10px;
-    }
-    .logo img {
-      max-height: 100px;
-      width: auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
+    <style>
+      body {
+        display: flex;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        width: 220px;
+        background-color: #064663; /* dunkles Blau mit Grünstich */
+        padding: 20px;
+        height: 100vh;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        color: #fff; /* helle Schriftfarbe */
+        overflow-y: auto;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      nav ul li a {
+        color: #fff; /* helle Links */
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: #a8d0e6; /* helleres Blau beim Hover */
+        text-decoration: underline;
+      }
+      .content {
+        flex: 1;
+        padding: 30px;
+        background-color: #f9fafb; /* heller, professioneller Hintergrund */
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .logo img {
+        max-height: 120px;
+      }
+    </style>
+  </head>
+  <body>
     <nav>
       <div class="logo">
-        <img src="{{ '/assets/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
+        <img src="/assets/logo-stallcheck.png" alt="StallCheck Logo" />
       </div>
       <ul>
-        <li><a href="#" class="tab-link active" data-tab="startseite">Startseite</a></li>
-        <li><a href="#" class="tab-link" data-tab="ueber-mich">Über mich</a></li>
-        <li><a href="#" class="tab-link" data-tab="stallcheck">StallCheck</a></li>
-        <li><a href="#" class="tab-link" data-tab="pakete">Pakete & Preise</a></li>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/ueber-mich">Über mich</a></li>
+        <li><a href="/stallcheck">StallCheck</a></li>
+        <li><a href="/pakete">Pakete & Preise</a></li>
       </ul>
     </nav>
-
-    <div class="content-area">
-      <div id="startseite" class="content-section active">
-        {{ content }}
-      </div>
-      <div id="ueber-mich" class="content-section">
-        <h2>Über mich</h2>
-        <p>Hier kannst du dich vorstellen und erzählen, wie es zu StallCheck kam.</p>
-      </div>
-      <div id="stallcheck" class="content-section">
-        <h2>StallCheck</h2>
-        <p>Erklärung zum Selbstcheck mit den 6 Fragen etc.</p>
-      </div>
-      <div id="pakete" class="content-section">
-        <h2>Pakete & Preise</h2>
-        <p>Details zu den Paketen, Preisen und Extras.</p>
-      </div>
+    <div class="content">
+      {{ content }}
     </div>
-  </div>
-
-  <script>
-    const tabs = document.querySelectorAll('.tab-link');
-    const contents = document.querySelectorAll('.content-section');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        // Aktive Klasse für Tabs
-        tabs.forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-
-        // Inhalte wechseln
-        const target = this.getAttribute('data-tab');
-        contents.forEach(c => {
-          c.classList.toggle('active', c.id === target);
-        });
-      });
-    });
-  </script>
-</body>
+  </body>
 </html>
