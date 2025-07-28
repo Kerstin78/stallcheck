@@ -14,7 +14,7 @@ Der Schutz deiner persönlichen Daten ist mir ein wichtiges Anliegen. Nachfolgen
 
 **Kerstin Stegemann**  
 Grüner Weg 17a  
-28790 Schwanewede 
+28790 Schwanewede
 E-Mail: stallcheck@web.de
 
 ---
