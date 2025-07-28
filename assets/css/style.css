@@ -22,11 +22,17 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #fff; /* Weißer Text für besseren Kontrast */
+  color: #f0f0f0; /* Sehr helles Grau, fast Weiß */
+  font-weight: 600; /* Etwas kräftiger für bessere Lesbarkeit */
+  transition: color 0.3s ease;
 }
+
 nav ul li a:hover {
   text-decoration: underline;
+  color: #ffffff; /* Reinweiß beim Hover */
 }
+
+
 
 
 .logo {
