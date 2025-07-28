@@ -3,7 +3,7 @@ layout: default
 title: Startseite
 ---
 
-# Herzlich willkommen bei StallCheck!
+# Herzlich Willkommen bei Stall-Check!
 
 StallCheck ist Ihr digitaler Partner für sichere, faire und transparente Stallkontrollen.  
 Wir helfen Ihnen, die Qualität und Sicherheit Ihres Pferdestalls mit einfachen, praxisnahen Checks zu bewerten.
