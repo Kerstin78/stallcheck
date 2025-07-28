@@ -7,11 +7,27 @@ body {
 
 nav {
   width: 220px;
-  background-color: #064663; /* Helles Blau */
+  background-color: #064663;
   padding: 20px;
   height: 100vh;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
 }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 10px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Weißer Text für besseren Kontrast */
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 
 .logo {
   text-align: center;
