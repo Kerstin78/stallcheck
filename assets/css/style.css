@@ -94,3 +94,17 @@ h1, h2, h3 {
   border-color: #064663;
   text-decoration: none;
 }
+
+footer {
+  background-color: #064663; /* gleiche Farbe wie Sidebar */
+  color: #e0f0f5;            /* helles, dezentes Hellblau */
+  text-align: center;
+  padding: 10px 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}
