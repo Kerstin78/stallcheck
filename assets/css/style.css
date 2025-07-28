@@ -1,51 +1,96 @@
+/* Allgemeines Grundlayout */
 body {
   display: flex;
-  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb; /* heller, neutraler Hintergrund */
+  color: #333;
 }
 
+/* Sidebar */
 nav {
   width: 220px;
-  background-color: #064663;
+  background-color: #064663; /* Dunkles Blau mit leichtem Grünstich */
   padding: 20px;
   height: 100vh;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   overflow-y: auto;
 }
+
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
+
 nav ul li {
   margin: 10px 0;
 }
+
 nav ul li a {
   text-decoration: none;
-  color: #f0f0f0; /* Sehr helles Grau, fast Weiß */
-  font-weight: 600; /* Etwas kräftiger für bessere Lesbarkeit */
+  color: #f0f0f0; /* sehr helles Grau, fast Weiß */
+  font-weight: 600;
   transition: color 0.3s ease;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   text-decoration: underline;
-  color: #ffffff; /* Reinweiß beim Hover */
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-
-
-
+/* Logo in Sidebar */
 .logo {
   text-align: center;
   margin-bottom: 30px;
 }
 
 .logo img {
-  max-width: 100%;
   max-height: 120px;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Hauptinhalt */
 .content {
   flex: 1;
   padding: 30px;
+  background-color: #f9fafb;
+  overflow-y: auto;
+}
+
+/* Optional: Scrollbar für Sidebar und Content */
+nav::-webkit-scrollbar,
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+nav::-webkit-scrollbar-thumb,
+.content::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+/* Überschriften Styling */
+h1, h2, h3 {
+  color: #064663;
+}
+
+/* Links im Inhalt */
+.content a {
+  color: #064663;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.content a:hover {
+  border-color: #064663;
+  text-decoration: none;
 }
