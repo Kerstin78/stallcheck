@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -60,7 +60,8 @@
 
     <div class="container">
       <nav>
-        <img src="{{ '/assets/images/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
+        <!-- Logo mit korrektem Pfad -->
+        <img src="{{ '/assets/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
         <a href="{{ '/' | relative_url }}">Startseite</a>
         <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
         <a href="{{ '/kontakt/' | relative_url }}">Kontakt</a>
