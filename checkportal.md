@@ -4,12 +4,12 @@ title: Mein StallCheck
 permalink: /checkportal/
 ---
 
-## Willkommen im geschützten Check-Bereich
+## Willkommen zum digitalen StallCheck
 
-Wählen Sie eines der verfügbaren Check-Themen aus:
+Hier finden Sie die kostenpflichtigen Prüfbereiche, sofern Sie berechtigt sind:
 
 - [Stallgebäude](/stallgebaeude/)
-- [Pferdehaltung & Fütterung](/fuetterung/)
-- [Hygiene & Gesundheit](/gesundheit/)
-- [Bewegung & Weidegang](/bewegung/)
-- usw.
+- [Fütterung & Haltung](/fuetterung/)
+- [Gesundheit & Hygiene](/gesundheit/)
+- [Weidegang & Bewegung](/bewegung/)
+- Weitere folgen...
