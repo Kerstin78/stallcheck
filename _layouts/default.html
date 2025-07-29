@@ -13,45 +13,38 @@
         min-height: 100vh;
         flex-direction: column;
       }
-
       header {
         background-color: #064663;
-        height: 20px; /* schmaler Farbstreifen */
+        height: 20px; /* Farbstreifen oben */
       }
-
       .container {
         display: flex;
         flex: 1;
       }
-
       nav {
         width: 220px;
         background-color: #064663;
         color: #fff;
         padding: 1rem;
         overflow-y: auto;
-        text-align: center; /* zentriert Logo und Text */
+        text-align: center;
       }
-
       nav img {
-        max-width: 120px;
-        height: auto;
-        margin-bottom: 1rem;
+        max-height: 100px;
+        margin-bottom: 2rem;
       }
-
       nav a {
         color: #ffffff;
         text-decoration: none;
         display: block;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
+        font-weight: bold;
       }
-
       main {
         flex: 1;
         padding: 2rem;
         background-color: #ffffff;
       }
-
       footer {
         background-color: #eee;
         text-align: center;
@@ -62,19 +55,19 @@
   </head>
   <body>
     <header>
-      <!-- nur Farbstreifen -->
+      <!-- Farbstreifen oben -->
     </header>
 
     <div class="container">
-     <nav>
-  <img src="{{ '/assets/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
-  <a href="{{ '/' | relative_url }}">Startseite</a>
-  <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
-  <a href="{{ '/kontakt/' | relative_url }}">Kontakt</a>
-  <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
-  <a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
-  <a href="{{ '/demo-check/' | relative_url }}">Kostenloser Demo-Check</a>
-</nav> 
+      <nav>
+        <img src="{{ '/assets/images/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
+        <a href="{{ '/' | relative_url }}">Startseite</a>
+        <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
+        <a href="{{ '/kontakt/' | relative_url }}">Kontakt</a>
+        <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+        <a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
+        <a href="{{ '/demo-check/' | relative_url }}">Kostenloser Demo-Check</a>
+      </nav>
 
       <main>
         {{ content }}
