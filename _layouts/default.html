@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/stallcheck/assets/css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <nav class="sidebar">
-        <div class="logo">
-          <img src="/stallcheck/assets/logo.png" alt="StallCheck Logo" />
-        </div>
-        <ul class="nav">
-          <li><a href="/stallcheck/">Startseite</a></li>
-          <li><a href="/stallcheck/ueber-mich">Über mich</a></li>
-          <li><a href="/stallcheck/demo-check">Kostenloser Demo-Check</a></li>
-          <li><a href="/stallcheck/kontakt">Kontakt</a></li>
-          <li><a href="/stallcheck/impressum">Impressum</a></li>
-          <li><a href="/stallcheck/datenschutz">Datenschutz</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | StallCheck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
 
-      <main class="content">
-        <div class="page-content">
-          {{ content }}
-        </div>
-        <footer class="footer">
-          <p>StallCheck – digital. sicher. auditbasiert.</p>
-        </footer>
-      </main>
-    </div>
-  </body>
+  <div id="container" style="display: flex; min-height: 100vh;">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" style="width: 250px; background: #f5f5f5; padding: 1rem;">
+      {% include sidebar.html %}
+    </aside>
+
+    <!-- Content -->
+    <main id="content" style="flex-grow: 1; padding: 2rem;">
+      {{ content }}
+    </main>
+
+  </div>
+
+  <footer style="text-align: center; font-size: 0.9em; padding: 1rem; background: #eee;">
+    © 2025 StallCheck – digital. sicher. auditbasiert
+  </footer>
+
+</body>
 </html>
