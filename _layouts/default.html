@@ -53,20 +53,20 @@
   </head>
   <body>
     <nav>
-      <div class="logo">
-        <img src="/assets/logo-stallcheck.png" alt="StallCheck Logo" />
-      </div>
-      <ul>
-        <li><a href="/">Startseite</a></li>
-        <li><a href="/stallcheck">StallCheck</a></li>
-        <li><a href="/pakete">Pakete & Preise</a></li>
-        <li><a href="/ueber-mich">Über mich</a></li>
-        <li><a href="/kontakt">Kontakt</a></li>
-        <li><a href="/datenschutz">Datenschutz</a></li>
-        <li><a href="/impressum">Impressum</a></li>
-      </ul>
-    </nav>
-    <div class="content">
+  <div class="logo">
+    <img src="{{ site.baseurl }}/assets/logo.png" alt="StallCheck Logo" />
+  </div>
+  <ul class="sidebar-menu">
+    <li><a href="{{ site.baseurl }}/">Startseite</a></li>
+    <li><a href="{{ site.baseurl }}/ueber-mich">Über mich</a></li>
+    <li><a href="{{ site.baseurl }}/kontakt">Kontakt</a></li>
+    <li><a href="{{ site.baseurl }}/demo-check">Kostenloser Demo-Check</a></li>
+    <li><a href="{{ site.baseurl }}/kostenpflichtiger-check">Kostenpflichtiger Check</a></li>
+    <li><a href="{{ site.baseurl }}/impressum">Impressum</a></li>
+    <li><a href="{{ site.baseurl }}/datenschutz">Datenschutz</a></li>
+  </ul>
+</nav>
+      <div class="content">
       {{ content }}
     </div>
   <footer>
