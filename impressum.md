@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Impressum
+title: "Impressum"
+permalink: /impressum/
 ---
 
 # Impressum
