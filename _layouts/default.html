@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -13,40 +13,45 @@
         min-height: 100vh;
         flex-direction: column;
       }
+
       header {
         background-color: #064663;
-        height: 40px; /* schlanker Balken ohne Inhalt */
+        height: 20px; /* schmaler Farbstreifen */
       }
+
       .container {
         display: flex;
         flex: 1;
       }
+
       nav {
         width: 220px;
         background-color: #064663;
         color: #fff;
         padding: 1rem;
         overflow-y: auto;
-        text-align: center;
+        text-align: center; /* zentriert Logo und Text */
       }
+
       nav img {
-        max-height: 80px;
-        width: auto;
-        display: inline-block;
+        max-width: 100%;
+        height: auto;
         margin-bottom: 1rem;
       }
+
       nav a {
         color: #ffffff;
         text-decoration: none;
         display: block;
         margin-bottom: 0.5rem;
-        text-align: left;
       }
+
       main {
         flex: 1;
         padding: 2rem;
         background-color: #ffffff;
       }
+
       footer {
         background-color: #eee;
         text-align: center;
@@ -57,12 +62,12 @@
   </head>
   <body>
     <header>
-      <!-- leerer Balken / Farbstreifen -->
+      <!-- nur Farbstreifen -->
     </header>
 
     <div class="container">
       <nav>
-        <img src="{{ '/assets/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
+        <img src="{{ '/assets/images/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
         <strong style="display: block; margin-bottom: 1rem;">Navigation</strong>
         <a href="{{ '/' | relative_url }}">Startseite</a>
         <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
