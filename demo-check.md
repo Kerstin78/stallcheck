@@ -1,6 +1,6 @@
 ---
-title: Kostenloser Demo-Check
-layout: page
+layout: default
+title: "Kostenloser Demo-Check"
 permalink: /demo-check/
 ---
 
