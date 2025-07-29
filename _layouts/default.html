@@ -1,76 +1,156 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
-    <style>
-      body {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: "StallCheck" }}</title>
+  <style>
+    /* Reset und Grundlayout */
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+
+    #container {
+      display: flex;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    #sidebar {
+      width: 260px;
+      background-color: #064663; /* dein Dunkelblau mit leichtem Grünstich */
+      color: #eee;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+
+    #sidebar #logo {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    #sidebar #logo img {
+      max-width: 180px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    #sidebar ul li {
+      margin-bottom: 18px;
+    }
+
+    #sidebar ul li a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    #sidebar ul li a:hover,
+    #sidebar ul li a:focus {
+      color: #b3e5c9; /* helles Mint-Grün als Hover */
+      background-color: rgba(255 255 255 / 0.1);
+      outline: none;
+    }
+
+    /* Hauptinhalt */
+    main#content {
+      flex-grow: 1;
+      padding: 40px 50px;
+      overflow-y: auto;
+      background: #f5f7fa;
+      min-width: 0; /* wichtig für Flexbox Scroll */
+    }
+
+    /* Footer (optional) */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+      background-color: #eee;
+      border-top: 1px solid #ccc;
+    }
+
+    /* Responsive: bei kleinen Bildschirmen Sidebar ausblenden */
+    @media (max-width: 768px) {
+      #container {
+        flex-direction: column;
+      }
+      #sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      #sidebar ul {
         display: flex;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      nav {
-        width: 220px;
-        background-color: #064663; /* dunkles Blau mit Grünstich */
-        padding: 20px;
-        height: 100vh;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        color: #fff; /* helle Schriftfarbe */
-        overflow-y: auto;
-      }
-      nav ul {
-        list-style-type: none;
-        padding: 0;
+        flex-direction: row;
+        gap: 15px;
+        flex-grow: 1;
         margin: 0;
       }
-      nav ul li {
-        margin: 10px 0;
+      #sidebar ul li {
+        margin: 0;
       }
-      nav ul li a {
-        color: #fff; /* helle Links */
-        text-decoration: none;
-        font-weight: bold;
+      #sidebar ul li a {
+        padding: 10px 14px;
+        font-size: 0.9rem;
       }
-      nav ul li a:hover {
-        color: #a8d0e6; /* helleres Blau beim Hover */
-        text-decoration: underline;
+      main#content {
+        padding: 20px 15px;
       }
-      .content {
-        flex: 1;
-        padding: 30px;
-        background-color: #f9fafb; /* heller, professioneller Hintergrund */
-      }
-      .logo {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .logo img {
-        max-height: 120px;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-  <div class="logo">
-    <img src="{{ site.baseurl }}/assets/logo.png" alt="StallCheck Logo" />
-  </div>
-  <ul class="sidebar-menu">
-    <li><a href="{{ site.baseurl }}/">Startseite</a></li>
-    <li><a href="{{ site.baseurl }}/ueber-mich">Über mich</a></li>
-    <li><a href="{{ site.baseurl }}/kontakt">Kontakt</a></li>
-    <li><a href="{{ site.baseurl }}/demo-check">Kostenloser Demo-Check</a></li>
-    <li><a href="{{ site.baseurl }}/kostenpflichtiger-check">Kostenpflichtiger Check</a></li>
-    <li><a href="{{ site.baseurl }}/impressum">Impressum</a></li>
-    <li><a href="{{ site.baseurl }}/datenschutz">Datenschutz</a></li>
-  </ul>
-</nav>
-      <div class="content">
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+
+    <!-- Sidebar -->
+    <nav id="sidebar" role="navigation" aria-label="Hauptnavigation">
+      <div id="logo">
+        <!-- Logo hier ablegen /assets/logo.png -->
+        <img src="/assets/logo.png" alt="StallCheck Logo" />
+      </div>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/ueber-mich">Über mich</a></li>
+        <li><a href="/impressum">Impressum</a></li>
+        <li><a href="/kontakt">Kontakt</a></li>
+        <li><a href="/demo-check">Demo-Check (kostenlos)</a></li>
+        <li><a href="/kostenpflichtiger-check">Kostenpflichtiger Check</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hauptbereich -->
+    <main id="content" role="main" tabindex="-1">
       {{ content }}
-    </div>
+    </main>
+
+  </div>
+
   <footer>
-  <p class="footer-slogan">StallCheck – digital. sicher. auditbasiert.</p>
-</footer>
+    &copy; {{ "now" | date: "%Y" }} StallCheck – digital. sicher. auditbasiert.
+  </footer>
 </body>
 </html>
