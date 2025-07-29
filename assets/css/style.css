@@ -1,110 +1,52 @@
-/* Allgemeines Grundlayout */
 body {
-  display: flex;
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9fafb; /* heller, neutraler Hintergrund */
-  color: #333;
+  font-family: Arial, sans-serif;
 }
 
-/* Sidebar */
-nav {
-  width: 220px;
-  background-color: #064663; /* Dunkles Blau mit leichtem Grünstich */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #064663;
+  color: #ffffff;
   padding: 20px;
-  height: 100vh;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  overflow-y: auto;
 }
 
-nav ul {
+.sidebar .logo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.nav {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
-nav ul li {
+.nav li {
   margin: 10px 0;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #f0f0f0; !important; /* sehr helles Grau, fast Weiß */
-  font-weight: 600;
-  transition: color 0.3s ease;
-  display: block;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  text-decoration: underline;
+.nav a {
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
 }
 
-/* Logo in Sidebar */
-.logo {
-  text-align: center;
-  margin-bottom: 30px;
+.nav a:hover {
+  text-decoration: underline;
 }
 
-.logo img {
-  max-height: 120px;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Hauptinhalt */
 .content {
   flex: 1;
-  padding: 30px;
-  background-color: #f9fafb;
-  overflow-y: auto;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-/* Optional: Scrollbar für Sidebar und Content */
-nav::-webkit-scrollbar,
-.content::-webkit-scrollbar {
-  width: 8px;
-}
-
-nav::-webkit-scrollbar-thumb,
-.content::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.1);
-  border-radius: 4px;
-}
-
-/* Überschriften Styling */
-h1, h2, h3 {
-  color: #064663;
-}
-
-/* Links im Inhalt */
-.content a {
-  color: #064663;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
-.content a:hover {
-  border-color: #064663;
-  text-decoration: none;
-}
-
-footer {
-  background-color: #064663; /* gleiche Farbe wie Sidebar */
-  color: #e0f0f5;            /* helles, dezentes Hellblau */
-  text-align: center;
-  padding: 10px 0;
-  font-style: italic;
-  font-size: 0.9rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-  z-index: 100;
+.footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
 }
