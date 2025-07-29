@@ -1,61 +1,66 @@
 ---
 layout: default
 title: Demo-Check
+permalink: /demo-check
 ---
 
-# Demo-Check: Allgemeine Betriebsstruktur
 
-Willkommen zum kostenlosen Demo-Check!  
-Beantworte die folgenden Fragen, um einen ersten Eindruck vom StallCheck-System zu erhalten.
+<section id="demo-check">
+  <h2>StallCheck – Demo: Allgemeine Betriebsstruktur</h2>
+  <p>Nutzen Sie diesen kostenlosen Kurzcheck, um einen ersten Eindruck vom StallCheck-System zu bekommen.</p>
 
-<form>
-<fieldset>
-  <legend><strong>Allgemeine Betriebsstruktur</strong></legend>
+  <form>
+    <div class="frageblock">
+      <p><strong>1. Existiert eine Stallordnung für den Betrieb?</strong></p>
+      <label><input type="radio" name="frage1"> Ja</label>
+      <label><input type="radio" name="frage1"> Nein</label>
+      <label><input type="radio" name="frage1"> Weiß ich nicht</label>
+      <p class="erklaerung">Eine schriftliche Stallordnung schafft klare Regeln und ist u. a. für Einsteller wichtig. Quelle: LAG Leitfaden.</p>
+    </div>
 
-  <label>1. Gibt es eine zentrale Ansprechperson für die Betriebsleitung?</label><br/>
-  <input type="radio" name="frage1" value="Ja"> Ja
-  <input type="radio" name="frage1" value="Nein"> Nein
-  <input type="radio" name="frage1" value="Weiß ich nicht"> Weiß ich nicht
-  <br/><br/>
+    <div class="frageblock">
+      <p><strong>2. Gibt es einen zentralen Notfallplan?</strong></p>
+      <label><input type="radio" name="frage2"> Ja</label>
+      <label><input type="radio" name="frage2"> Nein</label>
+      <label><input type="radio" name="frage2"> Weiß ich nicht</label>
+      <p class="erklaerung">Ein Notfallplan sollte Tierarztkontakte, Brand- und Evakuierungswege enthalten. Quelle: BMEL Notfallvorsorge.</p>
+    </div>
 
-  <label>2. Ist die Gesamtanzahl der auf der Anlage gehaltenen Pferde dokumentiert?</label><br/>
-  <input type="radio" name="frage2" value="Ja"> Ja
-  <input type="radio" name="frage2" value="Nein"> Nein
-  <input type="radio" name="frage2" value="Weiß ich nicht"> Weiß ich nicht
-  <br/><br/>
+    <div class="frageblock">
+      <p><strong>3. Werden alle Equidenpässe zentral aufbewahrt?</strong></p>
+      <label><input type="radio" name="frage3"> Ja</label>
+      <label><input type="radio" name="frage3"> Nein</label>
+      <label><input type="radio" name="frage3"> Weiß ich nicht</label>
+      <p class="erklaerung">Equidenpässe müssen jederzeit zugänglich und vollständig sein. Quelle: EU-VO 2015/262.</p>
+    </div>
 
-  <label>3. Existiert ein betrieblicher Übersichtsplan (z. B. Boxenplan, Geländeplan)?</label><br/>
-  <input type="radio" name="frage3" value="Ja"> Ja
-  <input type="radio" name="frage3" value="Nein"> Nein
-  <input type="radio" name="frage3" value="Weiß ich nicht"> Weiß ich nicht
-  <br/><br/>
+    <div class="frageblock">
+      <p><strong>4. Gibt es eine Betriebsübersicht mit allen wichtigen Kontaktdaten?</strong></p>
+      <label><input type="radio" name="frage4"> Ja</label>
+      <label><input type="radio" name="frage4"> Nein</label>
+      <label><input type="radio" name="frage4"> Weiß ich nicht</label>
+      <p class="erklaerung">Übersichtliche Darstellung erleichtert Handlungen in Notfällen. Quelle: Eigenes Auditmodell.</p>
+    </div>
 
-  <label>4. Werden Equidenpässe aller Pferde auf der Anlage zentral und zugänglich aufbewahrt?</label><br/>
-  <input type="radio" name="frage4" value="Ja"> Ja
-  <input type="radio" name="frage4" value="Nein"> Nein
-  <input type="radio" name="frage4" value="Weiß ich nicht"> Weiß ich nicht
-  <br/><br/>
+    <div class="frageblock">
+      <p><strong>5. Ist die Aufgabenverteilung im Betrieb klar geregelt?</strong></p>
+      <label><input type="radio" name="frage5"> Ja</label>
+      <label><input type="radio" name="frage5"> Nein</label>
+      <label><input type="radio" name="frage5"> Weiß ich nicht</label>
+      <p class="erklaerung">Klare Zuständigkeiten reduzieren Fehler und Tierwohlrisiken. Quelle: BMEL Tierhaltungsstrategie.</p>
+    </div>
 
-  <label>5. Gibt es feste Regelungen zur Tieraufnahme (z. B. Vorabfrage zur Haltungsform)?</label><br/>
-  <input type="radio" name="frage5" value="Ja"> Ja
-  <input type="radio" name="frage5" value="Nein"> Nein
-  <input type="radio" name="frage5" value="Weiß ich nicht"> Weiß ich nicht
-  <br/><br/>
+    <div class="frageblock">
+      <p><strong>6. Gibt es eine Übersicht der untergebrachten Pferde (z. B. Boxenbelegung)?</strong></p>
+      <label><input type="radio" name="frage6"> Ja</label>
+      <label><input type="radio" name="frage6"> Nein</label>
+      <label><input type="radio" name="frage6"> Weiß ich nicht</label>
+      <p class="erklaerung">Eine aktuelle Übersicht ist für Betriebsleitung und Notfälle essenziell. Quelle: Eigenes Auditmodell.</p>
+    </div>
+  </form>
 
-  <label>6. Wird die Betriebsführung dokumentiert (z. B. Stallbuch, Arbeitsplan)?</label><br/>
-  <input type="radio" name="frage6" value="Ja"> Ja
-  <input type="radio" name="frage6" value="Nein"> Nein
-  <input type="radio" name="frage6" value="Weiß ich nicht"> Weiß ich nicht
-  <br/><br/>
-
-  <label>7. Gibt es einen Notfallplan (z. B. für Tierseuchen, Feuer, Stromausfall)?</label><br/>
-  <input type="radio" name="frage7" value="Ja"> Ja
-  <input type="radio" name="frage7" value="Nein"> Nein
-  <input type="radio" name="frage7" value="Weiß ich nicht"> Weiß ich nicht
-  <br/><br/>
-
-  <button type="submit" disabled>Auswertung (folgt in der Vollversion)</button>
-</fieldset>
-</form>
-
-<p><em>Dies ist ein kostenloser Demo-Check. Eine detaillierte Auswertung und weitere Themenfelder stehen in der Vollversion zur Verfügung.</em></p>
+  <div class="weiter-button">
+    <p>Interesse am vollständigen StallCheck?</p>
+    <a href="/vollversion" class="btn">Zur kostenpflichtigen Version wechseln</a>
+  </div>
+</section>
