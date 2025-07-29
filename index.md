@@ -1,8 +1,9 @@
 ---
-title: Startseite
-layout: page
+layout: default
+title: "Willkommen"
 permalink: /
 ---
+
 
 # Willkommen bei StallCheck
 
