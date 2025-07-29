@@ -21,8 +21,17 @@ Hier findest du eine kostenlose Auswahl von Fragen aus dem StallCheck.
 
 <!-- ... weitere Fragen ... -->
 
-<div style="margin-top: 20px;">
-  <a href="/demo-check" style="background-color: #064663; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+<div style="margin-top: 20px; text-align: center;">
+  <a href="/demo-check" 
+     style="
+       background-color: #064663; 
+       color: white; 
+       padding: 12px 25px; 
+       border-radius: 6px; 
+       text-decoration: none; 
+       font-weight: bold;
+       display: inline-block;
+       ">
     Weiter zum kostenpflichtigen Check
   </a>
 </div>
