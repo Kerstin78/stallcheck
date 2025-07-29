@@ -1,17 +1,15 @@
 ---
-layout: default
 title: Startseite
+layout: page
+permalink: /
 ---
 
-# Herzlich Willkommen bei Stall-Check!
+# Willkommen bei StallCheck
 
-StallCheck ist ihr digitaler Partner für sichere, faire und transparente Stallkontrollen.  
-Wir helfen ihnen, die Qualität und Sicherheit Ihres Pferdestalls mit einfachen, praxisnahen Checks zu bewerten.
+**StallCheck – digital. sicher. auditbasiert**
 
-Geben sie möglichen neuen Einstellern einen ersten Einblick und Eindruck von ihrem Stall.
+Mit StallCheck kannst du schnell und einfach die Qualität deines Pferdestalls überprüfen – digital, vor Ort und auditbasiert.
 
-Starten Sie mit unserem kostenlosen Basis-Check oder entdecken Sie unsere erweiternden kostenpflichtigen Pakete.
-Infos hierzu finden sie im Menü auf der linken Seite.
+Nutze unseren kostenlosen Demo-Check, um einen ersten Eindruck zu gewinnen.
 
-Selbstverständlich kann der Stall-Check auch als reine Selbstkontrolle verwendet werden. So haben sie die
-Möglichkeit eventuelle Schwachstellen zu identifizieren und zu beheben.
+[Zum Demo-Check →](/demo-check/)
