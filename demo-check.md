@@ -64,3 +64,9 @@ permalink: /demo-check
     <a href="/vollversion" class="btn">Zur kostenpflichtigen Version wechseln</a>
   </div>
 </section>
+
+<div style="text-align: center; margin-top: 40px;">
+  <a href="/stallcheck-vollversion" style="background-color: #064663; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-size: 16px;">
+    Jetzt weitermachen – zum vollständigen StallCheck
+  </a>
+</div>
