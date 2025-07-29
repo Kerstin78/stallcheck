@@ -27,24 +27,20 @@
         color: #fff;
         padding: 1rem;
         overflow-y: auto;
+        text-align: center;
       }
       nav img {
         max-height: 80px;
-        display: block;
-        margin: 0 auto 0.5rem auto;
-      }
-      nav .slogan {
-        font-size: 0.9rem;
-        font-style: italic;
-        text-align: center;
+        width: auto;
+        display: inline-block;
         margin-bottom: 1rem;
-        color: #c9e3e8;
       }
       nav a {
         color: #ffffff;
         text-decoration: none;
         display: block;
         margin-bottom: 0.5rem;
+        text-align: left;
       }
       main {
         flex: 1;
@@ -67,7 +63,6 @@
     <div class="container">
       <nav>
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="StallCheck Logo" />
-        <div class="slogan">StallCheck – digital. sicher. auditbasiert</div>
         <strong>Navigation</strong>
         <a href="{{ '/' | relative_url }}">Startseite</a>
         <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
