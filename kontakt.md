@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kontakt
+title: "Kontakt"
 permalink: /kontakt/
 ---
 
