@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -15,9 +15,7 @@
       }
       header {
         background-color: #064663;
-        color: #fff;
-        padding: 1rem;
-        text-align: center;
+        height: 40px; /* schlanker Balken ohne Inhalt */
       }
       .container {
         display: flex;
@@ -29,6 +27,18 @@
         color: #fff;
         padding: 1rem;
         overflow-y: auto;
+      }
+      nav img {
+        max-height: 80px;
+        display: block;
+        margin: 0 auto 0.5rem auto;
+      }
+      nav .slogan {
+        font-size: 0.9rem;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #c9e3e8;
       }
       nav a {
         color: #ffffff;
@@ -51,12 +61,13 @@
   </head>
   <body>
     <header>
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="StallCheck Logo" style="max-height: 80px;">
-      <p>StallCheck – digital. sicher. auditbasiert</p>
+      <!-- leerer Balken / Farbstreifen -->
     </header>
 
     <div class="container">
       <nav>
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="StallCheck Logo" />
+        <div class="slogan">StallCheck – digital. sicher. auditbasiert</div>
         <strong>Navigation</strong>
         <a href="{{ '/' | relative_url }}">Startseite</a>
         <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
