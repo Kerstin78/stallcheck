@@ -66,16 +66,15 @@
     </header>
 
     <div class="container">
-      <nav>
-        <img src="{{ '/assets/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
-        <strong style="display: block; margin-bottom: 1rem;">Navigation</strong>
-        <a href="{{ '/' | relative_url }}">Startseite</a>
-        <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
-        <a href="{{ '/kontakt/' | relative_url }}">Kontakt</a>
-        <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
-        <a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
-        <a href="{{ '/demo-check/' | relative_url }}">Kostenloser Demo-Check</a>
-      </nav>
+     <nav>
+  <img src="{{ '/assets/logo-stallcheck.png' | relative_url }}" alt="StallCheck Logo" />
+  <a href="{{ '/' | relative_url }}">Startseite</a>
+  <a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a>
+  <a href="{{ '/kontakt/' | relative_url }}">Kontakt</a>
+  <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+  <a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
+  <a href="{{ '/demo-check/' | relative_url }}">Kostenloser Demo-Check</a>
+</nav> 
 
       <main>
         {{ content }}
