@@ -18,7 +18,7 @@ Hier findest du die aktuellen Angebote für StallCheck. Vom kostenlosen Schnellt
 
 ---
 
-## 🔵 Erweiterter Basis-Check – 19 €
+## 🔵 Erweiterter Basis-Check – xx €
 
 - 10 strukturierte Fragen mit Bewertung
 - Digitales Ergebnis (PDF)
@@ -28,7 +28,7 @@ Hier findest du die aktuellen Angebote für StallCheck. Vom kostenlosen Schnellt
 
 ---
 
-## 🟡 Zusatzpakete – je 15 €
+## 🟡 Zusatzpakete – xx €
 
 - Wählbar für Themen wie:
   - Hygiene & Infektionsschutz
@@ -40,7 +40,7 @@ Hier findest du die aktuellen Angebote für StallCheck. Vom kostenlosen Schnellt
 
 ---
 
-## 🟣 Komplettpaket – 99 €
+## 🟣 Komplettpaket – xx €
 
 - Alle Fragen (ca. 40) inklusive aller Zusatzmodule
 - Umfassende Gesamtbewertung
